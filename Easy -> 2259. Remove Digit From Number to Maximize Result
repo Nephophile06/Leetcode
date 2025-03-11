@@ -4,9 +4,7 @@ public:
         string result = "";
         for (int i = 0; i < number.size(); i++) {
             if (number[i] == digit) {
-                // Generate a candidate string by removing the digit at the current index
                 string candidate = number.substr(0, i) + number.substr(i + 1);
-                // Compare the candidate with the current result to maximize it
                 if (candidate > result) {
                     result = candidate;
                 }
